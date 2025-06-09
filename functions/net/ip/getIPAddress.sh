@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Get the default routing IP
 # get_default_host_ip
-#校验验证IP是否合法
+# Verify if an IP address is valid
 ipcalc -c 10.20.0.7
-# 验证一个IP是否是合法的IP需要与子网掩码一起计算
+# Validate an IP address together with its subnet mask
 ipcalc -c 10.104.28.0/255.255.192.0
 
 #egrep is the same as grep -E.
@@ -46,14 +46,15 @@ ifconfig | grep -Po '(?<=:).*(?=  B)'
 # others
 ifconfig eth0 | awk -F '[ :]+' 'NR==2 {print $4}'
 
-# 获取内网网卡名称(适用于2个网卡，1个用做内网，1个用作外网), U (route is up), G (use gateway), see 'man route' Flags
+# Get the internal interface name (for dual NICs with one internal, one external),
+# U (route is up) and G (use gateway) flags from 'man route'
 route -n | awk '/UG/&&!/0.0.0.0/ {print$NF;exit}'
 
-# 获取外网网卡名称
+# Get the external interface name
 route -n | awk '/^0.0.0.0/ {print$NF}'
 
-# 获取内网网卡IP地址(适用于2个网卡，1个用做内网，1个用作外网)
+# Get the internal interface IP address (for dual NICs)
 ip addr show scope global "$(route -n | awk '/UG/ && ! /0.0.0.0/ {print$NF;exit}')" | awk -F '[ /]+' '/global/ {print $3}'
 
-# 获取外网网卡IP
+# Get the external interface IP address
 ip addr show scope global "$(ip route | awk '/^default/ {print $5}')" | awk -F '[ /]+' '/global/ {print $3}'

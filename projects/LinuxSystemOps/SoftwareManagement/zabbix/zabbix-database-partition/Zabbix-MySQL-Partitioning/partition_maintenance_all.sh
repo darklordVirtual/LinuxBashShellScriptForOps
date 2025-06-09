@@ -21,4 +21,4 @@ CURL_DATA="{
 }
 "
 
-curl -X POST --header "Content-Type: application/json" --header "Accept: */*" -d "$CURL_DATA" "http://10.89.139.46:8088/api/v2/notification/email/send?token=【token值】"
+curl -X POST --header "Content-Type: application/json" --header "Accept: */*" -d "$CURL_DATA" "http://10.89.139.46:8088/api/v2/notification/email/send?token=<TOKEN>"
