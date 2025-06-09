@@ -1,0 +1,149 @@
+# Bash Scripts Summary
+
+This document lists all bash scripts with a short description taken from the first comment in each file.
+
+- **functions/blueteam/summarize_failed_ssh_logins.sh**: Summarize failed SSH login attempts from auth.log
+- **functions/check_if_exists/check_if_command_exists.sh**: Check if a command already exists
+- **functions/check_if_exists/check_if_function_exists.sh**: Check if a function already exists
+- **functions/date/dateFormat.sh**: common date format
+- **functions/debug/exit-with-error-msg.sh**: 
+- **functions/debug/message_controll.sh**: Control Functions
+- **functions/debug/print_line_number.sh**: old_PS4=$PS4
+- **functions/debug/restrict_error.sh**: same as set -e, set +e
+- **functions/debug/restrict_var_is_not_null.sh**: 
+- **functions/debug/trace_error.sh**: Print the commands being run so that we can see the command that triggers
+- **functions/distribution-release/distro.sh**: 
+- **functions/distribution-release/distro2.sh**: if [ "$(id -u)" != "0" ]; then
+- **functions/file/GoogleHostsFileForLinux/replaceLocalHostsFileAgainstGfw.sh**: Function description:
+- **functions/file/backupFileOrRollback.sh**: 
+- **functions/file/compareFileSize.sh**: FILES=
+- **functions/file/createFileWithRawContent.sh**: this is an example use for create a file with keep special character themselves
+- **functions/file/delete-comments.sh**: delete all spaces and comments of specialized file
+- **functions/file/findFileWithTimeRange.sh**: bash shell template
+- **functions/file/remove_blank_line.sh**: !/bin/bash
+- **functions/file/setLogrotate.sh**: 
+- **functions/file_lock/remove_locak_using_noclobber.sh**: lock=/var/lock/subsys/lock
+- **functions/file_lock/remove_lock_when_be_killed.sh**: lock=/var/lock/subsys/lock
+- **functions/net/icmp/ping_host.sh**: Ping a host and print the average latency
+- **functions/net/ip/getIPAddress.sh**: Get the default routing IP
+- **functions/net/ip/get_public_ip.sh**: Get the public IP address of the current machine
+- **functions/net/ip/validate_ip_address.sh**: Define some regular expressions for matching addresses.
+- **functions/net/others/inspect-alive-nodes.sh**: 
+- **functions/net/tcp/email/alertscripts_msmtp.sh**: 
+- **functions/net/tcp/email/alterscript_sendmailbycurl.sh**: 
+- **functions/net/tcp/http/curlOps.sh**: Created by PyCharm.
+- **functions/net/tcp/http/download/download_file.sh**: nohup curl -q --fail --location --max-redirs 10 --user-agent 'Vagrant/1.8.1 (+https://www.vagrantup.com; ruby2.2.3)' --continue-at - --output /root/box3c0998296d01dea7d3da811797eac21584a8b71a http://files.edx.org/vagrant-images/20151221-dogwood-fullstack-rc2.box &
+- **functions/net/tcp/port/monitor_tcp_status.sh**: code snippets for TCP status monitoring
+- **functions/net/tcp/ssh/sshKeyOps.sh**: exit 0
+- **functions/net/tcp/ssl/certbot_acme/get.acme.sh**: 
+- **functions/net/tcp/ssl/certbot_acme/get_ssl_certs_with_acme.sh_for_aliyun_dns_api.sh**: use acme.sh to get Let's Encrypt HTTPS certificates
+- **functions/net/tcp/ssl/certbot_acme/sync-file-from-ssh-server-using-rsync.sh**: 
+- **functions/options/askUserYesNoToConfirmOrContinue.sh**: Created by PyCharm.
+- **functions/options/getoptsOps.sh**: set -e
+- **functions/options/parametersSelector.sh**: 
+- **functions/others/ui/console/printColorToConsoleOnLinux.sh**: Created by PyCharm.
+- **functions/others/ui/description/descriptiongems.sh**: Progress: 0% (Rate: 106k/s, Estimated time remaining: 8:31:25)
+- **functions/path/get_absolutely_path_of_file.sh**: 
+- **functions/path/system_path_setting.sh**: Not all Linux distribution Operating System have sbin in PATH for regular users.
+- **functions/process/checkProcessIfExist.sh**: PIDFILE=""
+- **functions/redteam/check_http_methods.sh**: Check supported HTTP methods on a target URL
+- **functions/redteam/compile_payload.sh**: Compile a C payload for exploitation
+- **functions/redteam/dns_zone_transfer.sh**: Attempt a DNS zone transfer
+- **functions/redteam/enumerate_nfs_shares.sh**: Enumerate NFS exports from a host
+- **functions/redteam/extract_ssl_cert.sh**: Retrieve and display SSL certificate details
+- **functions/redteam/ftp_anonymous_login.sh**: Check if FTP allows anonymous login
+- **functions/redteam/gather_system_info.sh**: Collect basic system information for recon
+- **functions/redteam/http_header_enum.sh**: Enumerate HTTP response headers
+- **functions/redteam/local_suid_enum.sh**: Find potential SUID binaries for privilege escalation
+- **functions/redteam/netbios_enum.sh**: Enumerate NetBIOS names via nmblookup
+- **functions/redteam/open_proxy_check.sh**: Test if a host is an open HTTP proxy
+- **functions/redteam/rdp_brute_force.sh**: Attempt RDP brute force with ncrack
+- **functions/redteam/rdp_check.sh**: Check if RDP port is open
+- **functions/redteam/reverse_shell_generator.sh**: Print a bash reverse shell command
+- **functions/redteam/simple_nmap_scan.sh**: Quick nmap scan of a host to list open ports
+- **functions/redteam/sniff_credentials.sh**: Capture credentials on the network interface using tcpdump
+- **functions/redteam/subdomain_enum.sh**: Enumerate subdomains using a wordlist
+- **functions/redteam/targeted_port_knocking.sh**: Send a custom port knocking sequence
+- **functions/redteam/wifi_probe_sniffer.sh**: Capture WiFi probe requests using tcpdump
+- **functions/redteam/wps_pin_attack.sh**: Launch a WPS PIN attack using reaver
+- **functions/redteam/xss_fuzzer.sh**: Simple XSS fuzzing via curl
+- **functions/security/check-command-outputs.sh**: Created by PyCharm.
+- **functions/security/iptables-default-centos6.sh**: Created by PyCharm.
+- **functions/security/user_defined_and_customized_history.sh**: https://www.gnu.org/software/bash/manual/bashref.html#Bash-Variables
+- **functions/service/example_ajenti.sh**: 
+- **functions/service/functions.sh**: -*-Shell-script-*-
+- **functions/service/init-functions.sh**: From-release: CentOS release 6.8 (Final)
+- **functions/service/init-functions_ubuntu.sh**: /lib/lsb/init-functions for Debian -*- shell-script -*-
+- **functions/sh_header/BashShellHeader/bashheader-date.sh**: 
+- **functions/sh_header/BashShellHeader/bashheader-echowithcolor-A.sh**: 
+- **functions/sh_header/BashShellHeader/bashheader-echowithcolor-B.sh**: function cecho {
+- **functions/sh_header/BashShellHeader/bashheader-echowithcolor-C.sh**: 
+- **functions/sh_header/BashShellHeader/bashheader-echowithcolor-D.sh**: echo color function, smarter, learn from lnmp.org lnmp install.sh
+- **functions/sh_header/BashShellHeader/bashheader-resolvesoftlink.sh**: 
+- **functions/sh_header/BashShellHeader/bashheader-resolvesoftlink2.sh**: 
+- **functions/sh_header/BashShellHeader/bashheader-restrictbashscript.sh**: 
+- **functions/sh_header/BashShellHeader/bashheader-wholefile-general-example.sh**: 
+- **functions/sh_header/BashShellHeader/bashheader-wholefile-general.sh**: 
+- **functions/sh_header/BashShellHeader/example-deploy-java-maven.sh**: 
+- **functions/sh_header/BashShellHeader/example-deploy.sh**: 
+- **functions/sh_header/BashShellHeader/example-update.sh**: 
+- **functions/sh_header/opensource_software_header.sh**: !/usr/bin/env sh
+- **functions/string/get_cpu_usage_idle.sh**: Created by PyCharm.
+- **functions/string/json/shell2json.sh**: 
+- **functions/string/noComment.sh**: delete all spaces and comments of specialized file, using with $@ filename
+- **functions/string/noComment2.sh**: delete all spaces and comments of specialized file, using with $@ filename
+- **functions/string/statisticsanalyse/netstat_class_statistic.sh**: Created by PyCharm.
+- **functions/string/xml/shXmlParser.sh**: 
+- **functions/system/detect_hardware_info.sh**: facter
+- **functions/system/getLinuxDmesg.sh**: Refer to: http://blog.csdn.net/wzb56_earl/article/details/50625705
+- **functions/user/check_is_root.sh**: 
+- **functions/user/getUsersList.sh**: Refers: man useradd
+- **functions/variables/declareGloableVariables.sh**: ensure we don't re-source this in the same environment
+- **functions/variables/if_var_is_null.sh**: if [ "x${GRUB_DISABLE_OS_PROBER}" = "xtrue" ]; then
+- **projects/GitWebHooksAutoDeployScript/deploy.sh**: 
+- **projects/GitWebHooksAutoDeployScript/update.sh**: 
+- **projects/HappyBashForHappyLife/WhenICanGoHome.sh**: 
+- **projects/LinuxSystemOps/Filesystem/inotify-watching-filesystem-events.sh**: Description:
+- **projects/LinuxSystemOps/Filesystem/remove_old_app_files.sh**: filename: remove_old_app_files.sh
+- **projects/LinuxSystemOps/Filesystem/remove_old_apps.sh**: filename: remove_old_app.sh
+- **projects/LinuxSystemOps/Filesystem/rm_safe.sh**: a command or alias to replace 'rm' with a safe and easy to use, safe remove files or directories
+- **projects/LinuxSystemOps/Filesystem/rsync-and-backup-atlassian-files.sh**: Created by PyCharm.
+- **projects/LinuxSystemOps/Filesystem/rsync-directory-with-crontab.sh**: Created by PyCharm.
+- **projects/LinuxSystemOps/Security/login/check_who_login_and_record.sh**: 
+- **projects/LinuxSystemOps/Security/ssh/change_sshd_port.sh**: change ssh service port and restart it
+- **projects/LinuxSystemOps/Security/ssh/check_and_set_file_mode_bits.sh**: code snippets for SSH security enhancement
+- **projects/LinuxSystemOps/Services/SysV/CentOS/redis-shutdown.sh**: 
+- **projects/LinuxSystemOps/Services/restart-java-service.sh**: restart java service by pid
+- **projects/LinuxSystemOps/Services/watch-dog-for-service.sh**: Created by PyCharm.
+- **projects/LinuxSystemOps/SoftwareManagement/crontab/clean_logs.sh**: Created by PyCharm.
+- **projects/LinuxSystemOps/SoftwareManagement/docker/install-docker-on-ubuntu.sh**: https://docs.docker.com/engine/install/ubuntu/
+- **projects/LinuxSystemOps/SoftwareManagement/nginx/nginx-install-update.sh**: Created by PyCharm.
+- **projects/LinuxSystemOps/SoftwareManagement/others/install_python27_centos6.sh**: Created by PyCharm.
+- **projects/LinuxSystemOps/SoftwareManagement/php/php7-install-update.sh**: Created by PyCharm.
+- **projects/LinuxSystemOps/SoftwareManagement/yum/yum_update_packages_safely.sh**: Created by PyCharm.
+- **projects/LinuxSystemOps/SoftwareManagement/zabbix/zabbix-database-partition/Zabbix-MySQL-Partitioning/partition_maintenance_all.sh**: 
+- **projects/LinuxSystemOps/System/enable-swap.sh**: echo "create Swap which has same size of Memory"
+- **projects/LinuxSystemOps/System/systemOsInit/centos6-init.sh**: 
+- **projects/LinuxSystemOps/System/systemOsInit/enable-sudo-without-passwd.sh**: Usage: bash $0
+- **projects/autodeployOps/VersionRelease/release_vux2_backend.sh**: 
+- **projects/autodeployOps/VersionRelease/release_vux2_frontend.sh**: 
+- **projects/autodeployOps/doDeploy_AutomaticDeployJavaMavenProject.sh**: 
+- **projects/autodeployOps/doDeploy_AutomaticDeployJavaMavenProjectOnMultiHost.sh**: 
+- **projects/autodeployOps/doDeploy_AutomaticDeployJavaMavenProjectOnMultiHostV2.sh**: 
+- **projects/autodeployOps/doDeploy_with_config_and_procedure_separate/autodeployv3/deploy.sh**: 
+- **projects/autodeployOps/doDeploy_with_config_and_procedure_separate/autodeployv3/deploy_production.sh**: 
+- **projects/autodeployOps/doDeploy_with_config_and_procedure_separate/doDeploy_executionProcedure.sh**: 
+- **projects/autodeployOps/doDeploy_with_config_and_procedure_separate/doDeploy_userConfig.sh**: user defined variables
+- **projects/autodeployOps/gitlab-ci/bash/scripts/deploy-script-for-gitlab-ci.sh**: 
+- **projects/autodeployOps/gitlab-ci/bash/scripts/post_deploy.sh**: echo -e "\nemm...,executed this.\n"
+- **projects/backupOps/FileSystem/backup-remote-files-to-local.sh**: Created by PyCharm.
+- **projects/backupOps/FileSystem/backupFileWithSshRsyncToRemote.sh**: Function description:
+- **projects/backupOps/FileSystem/backupFilesUsingInotifyAndRsync.sh**: Created by PyCharm.
+- **projects/backupOps/MySQL/backup-mysql-using-mysqldump.sh**: Function description:
+- **projects/backupOps/MySQL/backupMySQLOnAliyunRDS.sh**: Created by PyCharm.
+- **projects/backupOps/MySQL/backupMysql.sh**: learn from https://docs.openstack.org/ops-guide/ops-backup-recovery.html#database-backups
+- **projects/backupOps/MySQL/backupMysqlByDate.sh**: Function description:
+- **projects/backupOps/MySQL/cleanOldMysqlBackups.sh**: mysql_backup_dir=/data/backup/db/mysql
+- **projects/others/startDockerContainersFirstTime.sh**: 
+- **projects/performances/Linux/debian-ubuntu/disable-motd-as-desired..sh**: Usage: sudo bash $0
+- **projects/processOps/ckill.sh**: Stopping process abruptly using kill

@@ -11,7 +11,7 @@
 # Description:            a watch dog for a service written in bash shell script
 # Long Description:       check service running status, bring it up when service fail upto n times
 # Usage:                  */1 * * * * /root/watch-dog-for-service.sh
-# References:             Tips: 写代码尽量写得优雅，但优雅的前提是让他人更容易读懂和维护。
+# References:             Tips: write code cleanly so others can easily read and maintain it.
 #                         follow suggestions on https://github.com/koalaman/shellcheck
 # Prerequisites:          []
 # Development Status:     3 - Alpha, 5 - Production/Stable

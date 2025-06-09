@@ -9,9 +9,11 @@
 # Create Date:            2019/5/20
 # Create Time:            9:54
 # Description:            
-# Long Description:       持续查询某个端口如22的网络连接情况，将时间戳和连接信息写入文件
-#                         应用场景：
-#                           1. 对外攻击，查被攻击对象；遭受攻击，查攻击对象
+# Long Description:       Continually monitor network connections (e.g. port 22)
+#                         and log timestamps with connection data.
+#                         Scenarios:
+#                           1. Offensive: identify targets being attacked
+#                           2. Defensive: determine the source of attacks
 # Usage:                  
 # References:             https://www.tldp.org/LDP/abs/html/string-manipulation.html
 # Prerequisites:          []
